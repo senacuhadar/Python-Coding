@@ -36,6 +36,7 @@ def reset_operation(fooled_ip,gateway_ip):
 number=0
 user_target_ip = get_inputs().target_ip
 user_gateway_ip = get_inputs().gateway_ip
+
 try:
     while True:
         arp_poisoning(user_target_ip,user_gateway_ip)
